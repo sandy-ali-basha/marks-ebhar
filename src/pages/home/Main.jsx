@@ -6,6 +6,8 @@ import Start from "./components/Start";
 import AboutUs from "./components/AboutUs";
 import EServices from "./components/EServices";
 import InteractiveMap from "./components/InteractiveMap";
+import News from "./components/News";
+import Partners from "./components/Partners";
 
 export const Main = () => {
   const { t } = useTranslation();
@@ -26,10 +28,10 @@ export const Main = () => {
           <InteractiveMap />
         </div>
         <div title={"News"} className="slide">
-          {/* <Start></Start> */}
+          <News />
         </div>
         <div title={"Partner"} className="slide">
-          {/* <Start></Start> */}
+          <Partners />
         </div>
       </Slides>
     </section>
