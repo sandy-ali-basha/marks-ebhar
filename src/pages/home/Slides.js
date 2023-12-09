@@ -18,7 +18,7 @@ function Slides({ children }) {
     const percentage = -100 * active + '%';
 
     return (
-        <div>
+        <div className='bg'>
             <div className="slides" style={{ transform: `translate3d(0, ${percentage}, 0)` }}>
                 {children.map((child, index) => {
                     if (index === active) {

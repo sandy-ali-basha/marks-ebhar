@@ -1,21 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import videoBg from "../../../assets/videos/background.mp4";
+import React from "react";
 import img from "../../../assets/images/EBHAR.svg";
 
 function AboutUs() {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      //   videoRef.current.play();
-    }
-  }, []);
-
   return (
     <>
-      <video muted loop playsInline ref={videoRef} className="bgVed">
-        <source src={videoBg} type="video/webm" />
-      </video>
       <div className="AboutUsContent content">
         <div className="AboutUs">
           <h2>

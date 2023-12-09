@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import videoBg from "../../../assets/videos/background.mp4";
+import React from "react";
 import img_1 from "../../../assets/images/Partners/1.svg";
 import img_2 from "../../../assets/images/Partners/2.svg";
 import img_3 from "../../../assets/images/Partners/3.svg";
@@ -17,13 +16,6 @@ import img_15 from "../../../assets/images/Partners/15.svg";
 import img_16 from "../../../assets/images/Partners/16.svg";
 
 function Partners() {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      // videoRef.current.play();
-    }
-  }, []);
   const images = [
     img_1,
     img_2,
@@ -43,9 +35,6 @@ function Partners() {
   ];
   return (
     <>
-      <video muted loop playsInline ref={videoRef} className="bgVed">
-        <source src={videoBg} type="video/webm" />
-      </video>
       <div className="Partners">
         {images.map((item, index) => (
           <div className="img">

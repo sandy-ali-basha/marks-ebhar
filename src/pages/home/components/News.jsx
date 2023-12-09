@@ -1,17 +1,9 @@
-import React, { useCallback, useEffect, useRef } from "react";
-import videoBg from "../../../assets/videos/background.mp4";
+import React, { useRef } from "react";
 // import required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 function News() {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      // videoRef.current.play();
-    }
-  }, []);
   const sliderRef = useRef(null);
 
   const SlidesContent = [
@@ -44,9 +36,6 @@ function News() {
 
   return (
     <>
-      <video muted loop playsInline ref={videoRef} className="bgVed">
-        <source src={videoBg} type="video/webm" />
-      </video>
       <div className="News">
         <Swiper
           navigation={true}
