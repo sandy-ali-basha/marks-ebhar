@@ -11,7 +11,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-10 sm:pt-16 w-full lg:pt-24 absolute bottom-0 z-10">
+    <section className="pb-10 w-full absolute bottom-0 z-10">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex items-center justify-between text-white">
           <ul className="flex-shrink-0 flex items-center ">

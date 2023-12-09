@@ -35,7 +35,7 @@ function Partners() {
   ];
   return (
     <>
-      <div className="Partners">
+      <div className="Partners animate__animated animate__fadeIn">
         {images.map((item, index) => (
           <div className="img">
             <img src={item} key={index} alt="" />

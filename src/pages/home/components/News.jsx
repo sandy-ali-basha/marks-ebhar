@@ -36,7 +36,7 @@ function News() {
 
   return (
     <>
-      <div className="News">
+      <div className="News animate__animated animate__fadeIn">
         <Swiper
           navigation={true}
           modules={[Navigation]}
